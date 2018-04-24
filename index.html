@@ -11,6 +11,8 @@
   -->
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <script>
     // LAMBDA SCHOOL
     //
@@ -23,6 +25,43 @@
     // your ML output and the D3 Template.
     // Remember data orientation, matrix shape, challenges, etc?
     // console.log is crucial.
+    // $.getJSON('https://docs.google.com/document/d/1lAOyTeoH2rAxzRvSbePCeGZWO2aqG8jY-lSYILR0Ggg/edit?usp=sharing',    function (data) {console.log("json", data) });
+    // var json = require('C:\ML code\ML-Presenting/data.json'); //(with path)
+
+    function downloadFile(file, callback) {
+        if (file.downloadUrl) {
+          var accessToken = gapi.auth.getToken().access_token;
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', file.downloadUrl);
+          xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+          xhr.onload = function() {
+            callback(xhr.responseText);
+          };
+          xhr.onerror = function() {
+            callback(null);
+          };
+          xhr.send();
+        } else {
+          callback(null);
+        }
+      }
+    // function printFile(fileId) {
+    //     var request = gapi.client.drive.files.get({
+    //       'fileId': fileId
+    //     });
+    //     request.execute(function(resp) {
+    //       console.log('Title: ' + resp.title);
+    //       console.log('Description: ' + resp.description);
+    //       console.log('MIME type: ' + resp.mimeType);
+    //     });
+    //   }
+
+    
+
+
+
+    data = downloadFile("1lAOyTeoH2rAxzRvSbePCeGZWO2aqG8jY-lSYILR0Ggg" )
+
     var trace1 = {
       x: [1, 2, 3, 4],
       y: [10, 15, 13, 17],
