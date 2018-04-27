@@ -24,9 +24,9 @@
     // your ML output and the D3 Template.
     // Remember data orientation, matrix shape, challenges, etc?
     // console.log is crucial.
-     $.getJSON('https://nostalgic-clarke-76b29e.netlify.com/presentation_data.json',    function (data_json) {
+     $.getJSON('https://nostalgic-clarke-76b29e.netlify.com/data.json',    function (data_json) {
        
-      console.log(data_json);
+      console.log(JSON.stringify(data_json));
        
       var trace1 = {
       x: [1, 2, 3, 4],
