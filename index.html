@@ -70,10 +70,8 @@
       setTimeout( function(){Plotly.newPlot('plotlyPlot', data)}, 100);
 
       window.onresize = function() {
-        Plotly.relayout('plotlyPlot', {
-          width: 0.9 * window.innerWidth,
-          height: 0.9 * window.innerHeight
-      })}
+        Plotly.Plots.resize("plotlyPlot");
+      }
        
     });
 
