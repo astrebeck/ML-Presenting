@@ -1,0 +1,22 @@
+{
+    "name": "<Alex Strebeck>",
+    "netlify_subdomain": "<https://nostalgic-clarke-76b29e.netlify.com/>",
+    "optional_dns": "<YOUR CUSTOM DOMAIN NAME IF YOU HAVE ONE OR PLAN TO USE ONE>"
+    "blog_post_1": {
+        "title": "<Why do we need Data Science?>",
+        "url": "<https://medium.com/@alexstrebeck/why-do-we-need-data-science-51d5ad0e328d>",
+        "keywords": ["<python>","<Data Science>","<coding>"]
+    },
+    "blog_post_2": {
+        "title": "<Point cloud areas: a finite element approach.>",
+        "url": "<https://medium.com/@alexstrebeck/point-cloud-areas-a-finite-element-approach-5b2f8dbd168a>",
+        "keywords": ["<Math>","<coding>","<point cloud>"]
+    },
+    "blog_post_3": {
+        "title": "<Jupiter Notebooks vs Colaboratory: a comparison>",
+        "url": "<https://medium.com/@alexstrebeck/jupiter-notebooks-vs-colaboratory-67bd51803d8>",
+        "keywords": ["<python>","<Data Science>","<coding>"]
+    },
+    "my_linkedin": "<https://www.linkedin.com/in/alex-strebeck/>",
+    "latex": "<https://www.overleaf.com/read/hnjbchcqpqwm>"
+}
