@@ -1,7 +1,7 @@
 {
     "name": "<Alex Strebeck>",
     "netlify_subdomain": "<https://nostalgic-clarke-76b29e.netlify.com/>",
-    "optional_dns": "<YOUR CUSTOM DOMAIN NAME IF YOU HAVE ONE OR PLAN TO USE ONE>"
+    "optional_dns": "<YOUR CUSTOM DOMAIN NAME IF YOU HAVE ONE OR PLAN TO USE ONE>",
     "blog_post_1": {
         "title": "<Why do we need Data Science?>",
         "url": "<https://medium.com/@alexstrebeck/why-do-we-need-data-science-51d5ad0e328d>",
