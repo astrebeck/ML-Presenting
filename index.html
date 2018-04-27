@@ -26,11 +26,14 @@
     // console.log is crucial.
      $.getJSON('https://nostalgic-clarke-76b29e.netlify.com/data.json',    function (data_json) {
        
-      console.log(JSON.stringify(data_json));
+      console.log(data_json);
+
+      var x = data_json.map(function(value,index) { return value[0]; });
+      var y = data_json.map(function(value,index) { return value[1]; });
        
       var trace1 = {
-      x: [1, 2, 3, 4],
-      y: [10, 15, 13, 17],
+      x: x,
+      y: y,
       mode: 'markers',
       type: 'scatter'
       };
@@ -39,7 +42,7 @@
 
       setTimeout( function(){Plotly.newPlot('plotlyPlot', data)}, 200);
        
-        });
+    });
 
     // timeout required so that page will have rendered before newPlot
     // is called.
